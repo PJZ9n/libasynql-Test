@@ -1,0 +1,9 @@
+# 設定ファイル
+example: value
+
+# データベース設定
+database:
+  type: sqlite
+  sqlite:
+    file: data.db
+  worker-limit: 1
