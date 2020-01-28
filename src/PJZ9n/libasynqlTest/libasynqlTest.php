@@ -76,6 +76,9 @@
                 $this->getLogger()->info("END.");
             });
             
+            //全部のクエリが処理されるまで待機(Thanks: @y_fy_)
+            $this->db->waitAll();
+            
             if (isset($this->db)) {
                 $this->db->close();
             }
